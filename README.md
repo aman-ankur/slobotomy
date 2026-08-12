@@ -2,7 +2,7 @@
 
 Surgical removal of AI slop from your writing.
 
-A skill for coding agents (Claude Code, Codex, Cursor, Gemini CLI, Copilot CLI, Claude Desktop) that edits drafts into sharper, more human prose — or flags AI-slop patterns without rewriting. It preserves the writer's voice instead of smoothing it into generic polish.
+A skill for coding agents (Claude Code, Codex, Cursor, Gemini CLI, Copilot CLI, Claude Desktop) that edits drafts into sharper, more human prose, or flags AI-slop patterns without rewriting. It preserves the writer's voice instead of smoothing it into generic polish.
 
 Inspired by [petergyang/no-ai-slop](https://github.com/petergyang/no-ai-slop) and Hardik Pandya's `stop-slop`. Extended with a personal banned-word list, business-jargon swaps, and a portability test.
 
@@ -10,9 +10,9 @@ Inspired by [petergyang/no-ai-slop](https://github.com/petergyang/no-ai-slop) an
 
 Three modes:
 
-- **Edit** — Paste a draft. Get back a tighter version plus a bulleted list of what changed.
-- **Detect** — Ask "is this slop?" and get named patterns with quoted lines and one-line fixes. No rewrite, no guessing AI authorship.
-- **Generate** — Ask for maximum slop about a topic. Satire that makes the patterns visible.
+- **Edit.** Paste a draft. Get back a tighter version plus a bulleted list of what changed.
+- **Detect.** Ask "is this slop?" and get named patterns with quoted lines and one-line fixes. No rewrite, no guessing AI authorship.
+- **Generate.** Ask for maximum slop about a topic. Satire that makes the patterns visible.
 
 ## Patterns it catches
 
@@ -26,7 +26,7 @@ The skill is three markdown files. Any coding agent that supports the [Agent Ski
 
 1. Go to the repo on GitHub: https://github.com/aman-ankur/slobotomy
 2. Click the green **Code** button → **Download ZIP**.
-3. Unzip it. You'll get a folder called `slobotomy-main` — rename it to `slobotomy`.
+3. Unzip it. You'll get a folder called `slobotomy-main`. Rename it to `slobotomy`.
 4. In Claude Desktop or Claude.ai: **Settings → Capabilities → Skills → Upload skill** and select the folder (or zip it back up and upload the zip if the picker asks for one).
 5. Enable the skill. Trigger it in any chat by pasting your draft with "edit this:" or "is this slop?".
 
@@ -83,7 +83,7 @@ npx skills add aman-ankur/slobotomy --skill slobotomy --global --yes
 
 ### Using multiple runtimes on one machine
 
-Clone once and symlink into every runtime's skills directory — one `git pull` updates all of them:
+Clone once and symlink into every runtime's skills directory. One `git pull` updates all of them:
 ```bash
 git clone https://github.com/aman-ankur/slobotomy.git ~/.claude/skills/slobotomy
 ln -sfn ~/.claude/skills/slobotomy ~/.agents/skills/slobotomy
@@ -115,9 +115,9 @@ Draft an AI slop post about founder mode
 
 ## Files
 
-- `SKILL.md` — rules and workflow (loaded by the agent)
-- `eval.md` — self-check the skill runs before returning an edit
-- `README.md` — this file
+- `SKILL.md`: rules and workflow (loaded by the agent)
+- `eval.md`: self-check the skill runs before returning an edit
+- `README.md`: this file
 
 ## Credit
 
