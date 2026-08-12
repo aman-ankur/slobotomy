@@ -2,7 +2,7 @@
 
 Surgical removal of AI slop from your writing.
 
-A skill for coding agents (Claude Code, Codex, Gemini CLI, Copilot CLI) that edits drafts into sharper, more human prose — or flags AI-slop patterns without rewriting. It preserves the writer's voice instead of smoothing it into generic polish.
+A skill for coding agents (Claude Code, Codex, Cursor, Gemini CLI, Copilot CLI, Claude Desktop) that edits drafts into sharper, more human prose — or flags AI-slop patterns without rewriting. It preserves the writer's voice instead of smoothing it into generic polish.
 
 Inspired by [petergyang/no-ai-slop](https://github.com/petergyang/no-ai-slop) and Hardik Pandya's `stop-slop`. Extended with a personal banned-word list, business-jargon swaps, and a portability test.
 
@@ -44,14 +44,30 @@ Project-scoped:
 git clone https://github.com/aman-ankur/slobotomy.git .claude/skills/slobotomy
 ```
 
-### Codex CLI, Copilot CLI, Gemini CLI
+### Codex CLI
 
-These runtimes read from `~/.agents/skills/` (the cross-runtime alias):
+Codex reads from `~/.codex/skills/`:
+```bash
+git clone https://github.com/aman-ankur/slobotomy.git ~/.codex/skills/slobotomy
+```
+
+### Cursor
+
+Cursor reads from `~/.cursor/skills/`:
+```bash
+git clone https://github.com/aman-ankur/slobotomy.git ~/.cursor/skills/slobotomy
+```
+
+If your Cursor version doesn't pick it up from there, add the contents of `SKILL.md` to **Cursor Settings → Rules → User Rules** as a fallback. Global rules apply to every project.
+
+### Copilot CLI, Gemini CLI (and other cross-runtime agents)
+
+These read from the shared `~/.agents/skills/` alias:
 ```bash
 git clone https://github.com/aman-ankur/slobotomy.git ~/.agents/skills/slobotomy
 ```
 
-### ChatGPT / Codex (managed)
+### ChatGPT / Codex (managed, web)
 
 Paste into the chat:
 ```
@@ -63,6 +79,16 @@ Install the /slobotomy skill globally from https://github.com/aman-ankur/sloboto
 If you have the [skills CLI](https://www.npmjs.com/package/skills):
 ```bash
 npx skills add aman-ankur/slobotomy --skill slobotomy --global --yes
+```
+
+### Using multiple runtimes on one machine
+
+Clone once and symlink into every runtime's skills directory — one `git pull` updates all of them:
+```bash
+git clone https://github.com/aman-ankur/slobotomy.git ~/.claude/skills/slobotomy
+ln -sfn ~/.claude/skills/slobotomy ~/.agents/skills/slobotomy
+ln -sfn ~/.claude/skills/slobotomy ~/.codex/skills/slobotomy
+ln -sfn ~/.claude/skills/slobotomy ~/.cursor/skills/slobotomy
 ```
 
 ### Manual
