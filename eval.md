@@ -37,7 +37,14 @@ For **detect** requests: verify the response names each pattern found with a quo
 20. Em dashes sparing: none in short copy, 1–2 in longer drafts when they clearly beat other punctuation?
 21. Passive voice hiding agency rewritten with a human subject?
 
+## Over-cutting check (symmetric to the slop checks)
+
+22. Does the edited draft have at least one line that would embarrass a corporate blog — something with real edge, humor, or specificity?
+23. Did I preserve at least one sentence that was punchier or more distinctive than "clean prose"?
+24. If I cut a fragment cascade, imperative crescendo, symmetrical slogan, or metaphorical ending, did I flag the tradeoff in **What changed** and offer both versions — or did I silently flatten?
+25. Did I adjust aggression to the genre (LinkedIn firm, essay light, fiction hands-off)?
+
 ## Output shape
 
-22. Did I return the full edited draft plus a short, bulleted **What changed** section (specific changes, not a piece summary)?
-23. Would the edited draft sound natural if read aloud to a sharp colleague?
+26. Did I return the full edited draft plus a short, bulleted **What changed** section (specific changes, not a piece summary)?
+27. Would the edited draft sound natural if read aloud to a sharp colleague?
