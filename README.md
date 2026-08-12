@@ -22,6 +22,16 @@ Binary contrasts, throat-clearing openers, faux-insight setups, colon reveals, d
 
 The skill is three markdown files. Any coding agent that supports the [Agent Skills spec](https://agentskills.io/specification) will pick it up from the right directory.
 
+### Claude Desktop / Claude.ai (no terminal, non-technical users)
+
+1. Go to the repo on GitHub: https://github.com/aman-ankur/slobotomy
+2. Click the green **Code** button → **Download ZIP**.
+3. Unzip it. You'll get a folder called `slobotomy-main` — rename it to `slobotomy`.
+4. In Claude Desktop or Claude.ai: **Settings → Capabilities → Skills → Upload skill** and select the folder (or zip it back up and upload the zip if the picker asks for one).
+5. Enable the skill. Trigger it in any chat by pasting your draft with "edit this:" or "is this slop?".
+
+If your Claude app doesn't show a Skills section yet, use the **Project instructions** fallback: create a Project, open its custom instructions, and paste the contents of `SKILL.md` into it. Every chat in that project will use the rules.
+
 ### Claude Code
 
 Personal (all projects):

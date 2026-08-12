@@ -27,8 +27,8 @@ For **detect** requests: verify the response names each pattern found with a quo
 
 ## Patterns
 
-13. Binary contrasts, negative listings, throat-clearing openers, empty validation, rhetorical setups — removed?
-14. Faux-insight setups, colon reveals, dramatic fragments, superficial `-ing` analysis, fake-strong verbs, synonym cycling — fixed?
+13. Binary contrasts, negative listings, throat-clearing openers, empty validation, rhetorical setups, staged Q&A ("Why? Because..."), stock section transitions ("Here's what we're releasing:") — removed?
+14. Faux-insight setups, colon reveals, dramatic fragments, superficial `-ing` analysis, fake-strong verbs, synonym cycling, fragment cascades, punchy imperative crescendos, symmetrical slogan kickers — fixed OR flagged with tradeoff?
 15. Importance puffery and weasel attribution replaced with plain facts and named sources (or flagged when no source)?
 16. Interpretive metadiscourse and reader guidance deleted?
 17. Fake-profound kicker lines deleted rather than rewritten into better metaphors?

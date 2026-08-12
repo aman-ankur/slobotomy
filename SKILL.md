@@ -63,6 +63,16 @@ navigate → handle · unpack → explain · lean into → accept · deep dive �
 
 **Rhetorical setups.** "What if I told you...", "Think about it:", "Plot twist:", self-answered "Question? Answer." → Drop and make the point.
 
+**Staged Q&A.** "Why? Because..." / "The reason? ..." / "How? ..." Standalone one-word questions that answer themselves are LinkedIn/LLM boilerplate. → Fold the reason into a plain sentence.
+
+**Stock section transitions.** "Here's what we're releasing:", "Here's what we found:", "So what does this mean?", "Let's break it down." → Cut, or use a transition that names the actual content ("The four models:", "Three things surprised us:").
+
+**Symmetrical slogan kickers.** Two short phrases balanced against each other: "Built in India. Open to everyone." / "Small team. Big mission." / "Made with love. Shipped with care." The symmetry itself reads as generated brand copy. → Merge into one sentence, or replace with a plain concrete statement.
+
+**Fragment cascades.** One-fragment-per-line lists used for rhythm: "The handwritten notes. / The lab reports. / The referral letters." Rhetorically effective but a signature LinkedIn/LLM shape. → Merge into a single sentence with commas when you want to remove the tell; keep it only if the writer's voice genuinely uses this rhythm elsewhere.
+
+**Punchy imperative crescendo.** "Try them. Try to break them. Run them on X." Short, escalating commands. Often the strongest line in a draft *and* the most generated-looking. → When you keep it, know you're keeping the pattern; when you cut it, know you're losing character. See the tradeoff rule below.
+
 **Superficial `-ing` analysis.** "highlighting the team's commitment", "underscoring the importance", "reflecting a broader trend", "showcasing innovation" → Replace with what actually happened and why it matters.
 
 **Importance puffery.** "stands as a testament", "marks a pivotal moment", "plays a vital role", "solidifies its position", "a defining moment". → State the fact; let the reader judge.
@@ -114,6 +124,18 @@ Write like a senior IC to peers: direct, specific, no filler. Every sentence sho
 4. If **edit** mode: make the minimum effective edit. Then self-check against `eval.md`.
 5. If any check fails, revise and re-check.
 6. Return the full edited draft plus a bulleted **What changed** section (specific, not a summary).
+
+## The tradeoff rule: pattern found ≠ automatic cut
+
+A pattern check answers "is this a common AI tell?" — not "is it bad writing here?" Sometimes the most human-sounding line in a draft is *also* a named pattern (punchy imperative sequences, fragment cascades, and symmetrical slogans especially). Cutting it makes the post cleaner and flatter; keeping it makes it warmer and more LLM-shaped.
+
+When this collision happens:
+
+- **Do not silently keep** the pattern and defend it in **What changed**. That hides the choice from the writer.
+- **Do not silently cut** it either. You may be removing their best line.
+- **Name it in What changed** and offer both versions: the pattern-clean cut and the voice-preserving keep. Let the writer decide.
+
+In **detect** mode, always flag these lines even if they're strong. The writer wants the evidence, not your literary judgment.
 
 ## Anti-goals
 
